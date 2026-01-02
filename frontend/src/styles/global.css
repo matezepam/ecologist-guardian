@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Geom:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'DM Sans', 'Geom', 'Sora', sans-serif;
+  background-color: #f6e7f7; 
+  color: #1a202c; 
+}
+
+.title {
+  @apply text-4xl font-bold;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.subtitle {
+  @apply text-2xl font-medium;
+  font-family: 'Sora', sans-serif;
+}
+
+.button {
+  @apply px-6 py-3 rounded-md text-white font-bold;
+  font-family: 'Geom', sans-serif;
+  background: linear-gradient(90deg, #cf0638, #fa6632);
+  transition: transform 0.2s;
+}
+
+.button:hover {
+  transform: scale(1.05);
+}
